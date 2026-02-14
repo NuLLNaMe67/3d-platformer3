@@ -6,6 +6,9 @@ public class giop : MonoBehaviour
 {
     
     private int health = 10;
+    public GameObject fireballPrefab;
+    public Transform attackPoint;
+
 
     public void TakeDanage(int damage)
     {
@@ -16,4 +19,16 @@ public class giop : MonoBehaviour
 
     }
 
-}
+    void Udpate() {
+
+
+        if (Input.GetMouseButtonDown(0))
+        {
+
+            Instantiate(fireballPrefab,
+            attackPoint.
+                position, attackPoint.rotation);
+        }
+    }
+
+    }
