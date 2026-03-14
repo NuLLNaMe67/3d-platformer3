@@ -14,8 +14,8 @@ public class dd : MonoBehaviour
     {
         //rflhgvtyqcz
         transform.position =
-            Vector3.MoveTowards(transform.position,
-            target.position, speed * Time.deltaTime);
+        Vector3.MoveTowards(transform.position,
+        target.position, speed * Time.deltaTime);
 
         //  rthyj
         transform.LookAt(target.position);

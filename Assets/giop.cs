@@ -35,7 +35,7 @@ public class giop : MonoBehaviour
 
 
 
-    void Udpate() {
+    void Update() {
 
 
         if (Input.GetMouseButtonDown(0))
@@ -43,7 +43,7 @@ public class giop : MonoBehaviour
 
             Instantiate(fireballPrefab,
             attackPoint.
-                position, attackPoint.rotation);
+            position, attackPoint.rotation);
         }
     }
 
