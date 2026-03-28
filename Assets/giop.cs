@@ -5,8 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class giop : MonoBehaviour
 {
-    
-    private int health = 10;
+    //кошка бросила котят
+    public int health = 10;
+
+    public int maxHealth = 10;
+
+
+
+
     public GameObject fireballPrefab;
     public Transform attackPoint;
     public AudioSource audioSource;
