@@ -15,13 +15,12 @@ public class playrui : MonoBehaviour
 
 
 
-    \
+   
     // Start is called before the first frame update
     void Start()
     {
         healthSlider.maxValue = giop.maxHealth;
         healthSlider.value = giop.health;
-
         coinsCounterText.text = giop.coins.ToString();
     }
 

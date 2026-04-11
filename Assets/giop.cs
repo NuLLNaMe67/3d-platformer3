@@ -17,7 +17,7 @@ public class giop : MonoBehaviour
     public Transform attackPoint;
     public AudioSource audioSource;
     public  AudioClip damageSound;
-
+    public int coins = 0;
  
     public void TakeDamage(int damage)
     {
