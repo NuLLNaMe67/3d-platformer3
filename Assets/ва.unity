@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4449841, g: 0.49456722, b: 0.5736916, a: 1}
+  m_IndirectSpecularColor: {r: 0.4449846, g: 0.494568, b: 0.5736931, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13592,10 +13592,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1510e307a896ecb418e121ecf86ba7e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 10
+  maxHealth: 10
   fireballPrefab: {fileID: 3997914522317871428, guid: e796799d36f119f42a891daf68b32e70, type: 3}
   attackPoint: {fileID: 394016901}
   audioSource: {fileID: 485111478}
   damageSound: {fileID: 8300000, guid: 204d93dc6098fe74dba1f35b0bf288e1, type: 3}
+  coins: 0
 --- !u!1001 &103753049
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70524,7 +70527,6 @@ RectTransform:
   m_Children:
   - {fileID: 1054039404}
   - {fileID: 1549242395}
-  - {fileID: 614747948}
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -81499,7 +81501,7 @@ GameObject:
   - component: {fileID: 614747950}
   - component: {fileID: 614747949}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: CoinsCounter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81512,18 +81514,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 614747947}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 88.46002}
+  m_LocalScale: {x: 0.38798252, y: 0.38798252, z: 0.38798252}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 521468853}
-  m_RootOrder: 2
+  m_Father: {fileID: 1054039404}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 124.56616, y: 85.379135}
+  m_SizeDelta: {x: 600, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &614747949
 MonoBehaviour:
@@ -81608,7 +81610,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -470.64377, w: -315.34628}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -139012,11 +139014,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1054039403}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1379, y: 474, z: -228}
+  m_LocalPosition: {x: -140, y: 104, z: -228}
   m_LocalScale: {x: 2.5774355, y: 2.5774355, z: 2.5774355}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1080958453}
+  - {fileID: 614747948}
   m_Father: {fileID: 521468853}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -142308,37 +142310,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4502041196897312, guid: 358cf835a1cf6dc44be7c394778cb1ce, type: 3}
   m_PrefabInstance: {fileID: 1080957783}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1080958452
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1080958453}
-  m_Layer: 0
-  m_Name: CoinsCounter
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1080958453
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1080958452}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1054039404}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1081440396
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -209082,10 +209053,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1510e307a896ecb418e121ecf86ba7e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 10
+  maxHealth: 10
   fireballPrefab: {fileID: 0}
   attackPoint: {fileID: 0}
   audioSource: {fileID: 0}
   damageSound: {fileID: 0}
+  coins: 0
 --- !u!1001 &1599885812
 PrefabInstance:
   m_ObjectHideFlags: 0
